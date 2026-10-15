@@ -1,8 +1,9 @@
 # Padrões de Projeto — Atividades
 
 Repositório único com as atividades práticas de Padrões de Projeto (GoF) implementadas em Java,
-organizadas por **categoria do padrão**: padrões **criacionais** (como objetos são criados) e
-padrões **estruturais** (como objetos e classes são compostos).
+organizadas por **categoria do padrão**: padrões **criacionais** (como objetos são criados),
+**estruturais** (como objetos e classes são compostos) e **comportamentais** (como objetos
+colaboram e dividem responsabilidades).
 
 Cada pasta de padrão é um projeto independente, com o seu próprio `README.md` contendo a
 descrição da solução, as instruções de compilação/execução e as **respostas às questões para
@@ -35,6 +36,17 @@ flexibilidade e reduzindo o acoplamento. → [`estruturais/`](estruturais/)
 | [`estruturais/flyweight`](estruturais/flyweight) | Flyweight | 013 | Renderização de milhares de árvores |
 | [`estruturais/proxy`](estruturais/proxy) | Proxy | 014 | Galeria de imagens com carregamento sob demanda |
 
+## Padrões comportamentais
+
+Tratam da comunicação e da divisão de responsabilidades entre objetos, substituindo condicionais
+por colaboração entre classes especializadas. → [`comportamentais/`](comportamentais/)
+
+| Pasta | Padrão | Atividade | Cenário |
+| --- | --- | --- | --- |
+| [`comportamentais/strategy`](comportamentais/strategy) | Strategy | 015 | Cálculo de frete por modalidade de entrega |
+| [`comportamentais/template-method`](comportamentais/template-method) | Template Method | 016 | Geração de relatórios em CSV, HTML e texto |
+| [`comportamentais/state`](comportamentais/state) | State | 017 | Ciclo de vida de um pedido de loja virtual |
+
 ## Estrutura do repositório
 
 ```
@@ -45,15 +57,20 @@ flexibilidade e reduzindo o acoplamento. → [`estruturais/`](estruturais/)
 │   ├── builder/            src/ (pacote padrão)
 │   ├── prototype/          Maven — src/main/java/com/example/prototype
 │   └── singleton/          src/main/java/br/com/singleton
-└── estruturais/
+├── estruturais/
+│   ├── README.md
+│   ├── adapter/            src/ (pacote padrão) + RESPOSTAS.md
+│   ├── bridge/             src/main/java/notification
+│   ├── composite/          src/ (pacote padrão)
+│   ├── decorator/          src/ (pacote padrão)
+│   ├── facade/             src/ (pacote padrão)
+│   ├── flyweight/          src/ (pacote padrão)
+│   └── proxy/              src/ (pacote padrão)
+└── comportamentais/
     ├── README.md
-    ├── adapter/            src/ (pacote padrão) + RESPOSTAS.md
-    ├── bridge/             src/main/java/notification
-    ├── composite/          src/ (pacote padrão)
-    ├── decorator/          src/ (pacote padrão)
-    ├── facade/             src/ (pacote padrão)
-    ├── flyweight/          src/ (pacote padrão)
-    └── proxy/              src/ (pacote padrão)
+    ├── strategy/           src/ (pacote padrão)
+    ├── template-method/    src/ (pacote padrão)
+    └── state/              src/ (pacote padrão)
 ```
 
 Cada projeto preservou o layout de código com que foi entregue, por isso os comandos de
@@ -94,4 +111,5 @@ mvn exec:java
 
 As atividades 006 a 011 foram desenvolvidas originalmente em repositórios separados e foram
 consolidadas aqui, com o código e as respostas preservados. As atividades 012 (Facade), 013
-(Flyweight) e 014 (Proxy) foram desenvolvidas diretamente neste repositório.
+(Flyweight), 014 (Proxy), 015 (Strategy), 016 (Template Method) e 017 (State) foram
+desenvolvidas diretamente neste repositório.

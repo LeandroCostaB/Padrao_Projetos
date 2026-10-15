@@ -34,4 +34,5 @@ encaminha chamadas a outro — mas intenções distintas:
   objetos com dados idênticos.
 
 Cada pasta contém o código-fonte, as instruções de execução e as respostas às questões para
-reflexão da respectiva atividade. Os padrões criacionais estão em [`../criacionais`](../criacionais).
+reflexão da respectiva atividade. As outras categorias estão em
+[`../criacionais`](../criacionais) e [`../comportamentais`](../comportamentais).

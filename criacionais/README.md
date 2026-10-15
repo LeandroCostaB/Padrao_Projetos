@@ -23,4 +23,5 @@ abstrações em vez de chamar `new` sobre classes concretas.
   multiplicidade da instância.
 
 Cada pasta contém o código-fonte, as instruções de execução e as respostas às questões para
-reflexão da respectiva atividade. Os padrões estruturais estão em [`../estruturais`](../estruturais).
+reflexão da respectiva atividade. As outras categorias estão em
+[`../estruturais`](../estruturais) e [`../comportamentais`](../comportamentais).
