@@ -9,6 +9,8 @@ objetos colaboradores, definindo quem faz o quê e como as chamadas fluem entre 
 | [`strategy`](strategy) | Strategy | 015 | Encapsular **algoritmos intercambiáveis** e trocá-los em tempo de execução | Cálculo de frete por modalidade de entrega |
 | [`template-method`](template-method) | Template Method | 016 | Definir o **esqueleto de um algoritmo**, deixando etapas para as subclasses | Geração de relatórios em CSV, HTML e texto |
 | [`state`](state) | State | 017 | Alterar o comportamento de um objeto conforme seu **estado interno** | Ciclo de vida de um pedido de loja virtual |
+| [`observer`](observer) | Observer | 018 | **Notificar** interessados sobre mudanças de estado, com inscrição dinâmica | Estação meteorológica e seus painéis |
+| [`mediator`](mediator) | Mediator | 019 | **Centralizar** as regras de comunicação entre objetos em um mediador | Sala de chat com mensagens públicas e privadas |
 
 ## Como se diferenciam
 
@@ -23,6 +25,10 @@ distintas:
   a ordem das etapas na classe base e varia apenas o que cada etapa faz, com a escolha definida em
   tempo de compilação — em troca, permite compartilhar o código comum entre as variações, algo que
   o Strategy não oferece.
+- **Observer** e **Mediator** tratam de comunicação entre vários objetos, mas com intenções
+  diferentes: o Observer **difunde um evento** em uma direção, para interessados anônimos que não
+  se conhecem e não interagem; o Mediator **coordena uma conversa** bidirecional entre
+  participantes identificados, concentrando nele as regras de quem fala com quem.
 
 Cada pasta contém o código-fonte, as instruções de execução e as respostas às questões para
 reflexão da respectiva atividade. As outras categorias estão em [`../criacionais`](../criacionais)
