@@ -48,6 +48,8 @@ por colaboração entre classes especializadas. → [`comportamentais/`](comport
 | [`comportamentais/state`](comportamentais/state) | State | 017 | Ciclo de vida de um pedido de loja virtual |
 | [`comportamentais/observer`](comportamentais/observer) | Observer | 018 | Estação meteorológica e seus painéis |
 | [`comportamentais/mediator`](comportamentais/mediator) | Mediator | 019 | Sala de chat com mensagens públicas e privadas |
+| [`comportamentais/command`](comportamentais/command) | Command | 020 | Controle remoto de iluminação com desfazer |
+| [`comportamentais/chain-of-responsibility`](comportamentais/chain-of-responsibility) | Chain of Responsibility | 021 | Aprovação de despesas por alçada |
 
 ## Estrutura do repositório
 
@@ -74,7 +76,9 @@ por colaboração entre classes especializadas. → [`comportamentais/`](comport
     ├── template-method/    src/ (pacote padrão)
     ├── state/              src/ (pacote padrão)
     ├── observer/           src/ (pacote padrão)
-    └── mediator/           src/ (pacote padrão)
+    ├── mediator/           src/ (pacote padrão)
+    ├── command/            src/ (pacote padrão)
+    └── chain-of-responsibility/  src/ (pacote padrão)
 ```
 
 Cada projeto preservou o layout de código com que foi entregue, por isso os comandos de
@@ -115,5 +119,6 @@ mvn exec:java
 
 As atividades 006 a 011 foram desenvolvidas originalmente em repositórios separados e foram
 consolidadas aqui, com o código e as respostas preservados. As atividades 012 (Facade), 013
-(Flyweight), 014 (Proxy), 015 (Strategy), 016 (Template Method), 017 (State), 018 (Observer) e
-019 (Mediator) foram desenvolvidas diretamente neste repositório.
+(Flyweight), 014 (Proxy), 015 (Strategy), 016 (Template Method), 017 (State), 018 (Observer),
+019 (Mediator), 020 (Command) e 021 (Chain of Responsibility) foram desenvolvidas diretamente
+neste repositório.

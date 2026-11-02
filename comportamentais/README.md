@@ -11,6 +11,8 @@ objetos colaboradores, definindo quem faz o quê e como as chamadas fluem entre 
 | [`state`](state) | State | 017 | Alterar o comportamento de um objeto conforme seu **estado interno** | Ciclo de vida de um pedido de loja virtual |
 | [`observer`](observer) | Observer | 018 | **Notificar** interessados sobre mudanças de estado, com inscrição dinâmica | Estação meteorológica e seus painéis |
 | [`mediator`](mediator) | Mediator | 019 | **Centralizar** as regras de comunicação entre objetos em um mediador | Sala de chat com mensagens públicas e privadas |
+| [`command`](command) | Command | 020 | Encapsular uma **solicitação** em um objeto, com operação e destinatário | Controle remoto de iluminação com desfazer |
+| [`chain-of-responsibility`](chain-of-responsibility) | Chain of Responsibility | 021 | Passar uma solicitação por uma **cadeia** até que alguém a trate | Aprovação de despesas por alçada |
 
 ## Como se diferenciam
 
@@ -29,6 +31,11 @@ distintas:
   diferentes: o Observer **difunde um evento** em uma direção, para interessados anônimos que não
   se conhecem e não interagem; o Mediator **coordena uma conversa** bidirecional entre
   participantes identificados, concentrando nele as regras de quem fala com quem.
+- **Command** se parece com o Strategy (um objeto com uma operação), mas representa **o que fazer
+  e para quem**, não *como* fazer: por já carregar o destinatário, a solicitação vira um dado que
+  pode ser guardada em um botão, enfileirada ou desfeita.
+- **Chain of Responsibility** também percorre vários objetos, como o Observer, mas a travessia é
+  **exclusiva**: para no primeiro que trata a solicitação, em vez de notificar todos.
 
 Cada pasta contém o código-fonte, as instruções de execução e as respostas às questões para
 reflexão da respectiva atividade. As outras categorias estão em [`../criacionais`](../criacionais)
